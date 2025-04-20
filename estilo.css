@@ -1,0 +1,343 @@
+body{
+    background-color: rgb(157, 176, 240);
+    font-family:  "Andale Mono", "FreeMono","calibri", serif;
+}
+
+
+
+#Home .MenuHome a {
+    color:rgb(19, 99, 99);
+}
+
+a.ativo{
+    color:aqua;
+}
+.centralizar a:hover {
+    color: rgb(66, 73, 77);
+}
+
+#conteudo{
+    background-color: white;
+    text-align: center;
+}
+
+#topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* isso alinha verticalmente */
+    padding-top:-2px;
+    
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#topo img {
+    
+    max-height: 120px;
+}
+#topo ul{
+    float:right ;
+    display: flex;
+}
+.centralizar{
+    text-align: right;
+    padding-right: 5em;
+    float: right;
+    list-style-type: none;
+}
+
+.centralizar a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 15px;
+    padding: 5px;
+}
+#menu{
+    background-color: rgb(187, 158, 119);
+    padding:18px;
+}
+.onda-topo {
+    background-color: #135a94;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.onda-topo h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family:  "Andale Mono", "FreeMono", "calibri", serif;
+}
+
+.onda svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+
+.onda {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* Remove espaço vertical indesejado */
+}
+#rodape{
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.logos {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    gap: 20px;               /* espaçamento entre as logos */
+    flex-wrap: wrap;         /* permite quebra de linha em telas pequenas */
+    margin: 10px;
+    padding: 0;
+}
+  
+.logos2 {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    gap: 15px;               /* espaçamento entre as logos */
+    flex-wrap: wrap;         /* permite quebra de linha em telas pequenas */
+    margin: 0;
+    padding: 0;
+}
+.logos img {
+    height: 150px;     /* define uma altura comum */
+    object-fit: contain;
+    width: 200px;
+}
+.rodapeTexto{
+    background-color:#0077be;
+    ;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+
+    display: flex;             /* <<< aqui está o segredo */
+    justify-content: center;   /* centraliza horizontalmente as colunas */
+    align-items: flex-start;   /* alinha ao topo */
+    gap: 60px;                 /* espaço entre os blocos */
+    padding: 0;
+    margin-top: -5px;
+}
+button{
+    background-color: rgb(9, 9, 78);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input, textarea {
+    font-family: inherit;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: rgb(20, 20, 100);
+}
+.rodapeconteudo{
+    text-align: left;
+    max-width: 180px;
+    align-items: center;  
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+.rodapeconteudo a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;           /* Coloca imagem em cima do texto */
+    align-items: center; 
+    margin: 0;
+}
+
+ h1{
+    text-align:right; 
+    font-size: 70px; 
+    color:rgb(21, 21, 71); 
+    font-weight: bold; 
+    margin: 0; 
+    margin-bottom: 5px; 
+    padding-right: 5em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+  }
+
+  .card {
+    width: 300px;
+    background-color: white;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .card img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px 20px 0 30px;
+    display: block;
+  }
+
+  .card-footer {
+    width: 250px;
+    background-color: #0077be;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 0px 30px 0px 30px;
+    margin: 0;
+  }
+
+  .card-footer h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .card-footer a {
+    text-decoration: none;
+    background-color: #005fa3;
+    color: white;
+    padding: 8px 6px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .card-footer a:hover {
+    background-color: #004b82;
+  }
+.forum{
+    background-color: #004b82;
+    margin: 80px 0px 0px 0px;
+    text-align: center;
+    padding: 50px;
+}
+.forum h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: block;
+    padding-left:180px ;
+}
+
+.forum button{
+    background-color: red;
+    padding: 15px 45px 15px 45px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    background-color:#0077be;
+    padding: 50px;
+  }
+
+.card3{
+    align-items: center;
+    gap: 20px;
+    
+    position: relative;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card3_footer{
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background-color: #004b82;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 0px 30px;
+    bottom: 0px;
+    left: 90px
+}
+.card3_a{
+    position:relative;
+    width: 200px;
+    height: 130px;
+}
+.card3_footer a{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 6px;
+    background-color: #005fa3;
+    font-size: 14px;
+    right: 20px;
+    bottom:0px;
+}
+.card3_header{
+    font-weight: bold;
+    background-color: #004b82;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 0px 20px;
+}
+.card3 img{
+    width: 250px;
+    height: 280px;
+}
+
+.card3 p{
+    font-size: 16px;
+    padding: 20px
+}
+
+.card3_footer a:hover{
+    background-color: white;
+    color:black;
+    transition: 3ms;
+}
